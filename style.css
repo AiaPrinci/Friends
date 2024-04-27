@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-image: url('./Images/plant_leaves_drops_212385_3840x2160.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+}
+
+.body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.friends-container {
+    list-style: none;
+    background-color: #0000005e;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(36, 1, 68, 0.853);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s;
+}
+
+
+.btn-container:hover {
+    scale: 1.05;
+}
+
+.img-header-container {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+}
+
+.img-header-container img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.btn {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #1877F2;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+@media only screen and (max-width: 769px), (max-width: 1025px) {
+
+
+    .btn-container {
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .img-header-container {
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        align-items: center;
+        font-family: "Kanit", sans-serif;
+        color: #fff;
+        text-shadow: 0px 0px 5px #000;
+        font-size: 7px;
+    }
+    
+    .img-header-container img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        filter: drop-shadow(5px 5px 10px #000);
+    }
+    .btn {
+        height: 25px;
+        width: 100px;
+        border-radius: 10px;
+        font-size: 8px;
+    }
+    .btn-6 {
+        width: 200px;
+    }
+}
